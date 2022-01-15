@@ -1,3 +1,40 @@
 body {
   background: peachpuff;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  border: 2px solid black;
+}
+.a{
+  border: 2px solid black;
+  background: #5305e4;  
+
+  height: 100px;
+  width: 1500px;
+  margin: 10px;
+}
+.b,.c,.d,.e,.f,.g{
+  border: 2px solid black;
+  background: #274eb9;  
+min-height: 250px;
+min-width: 250px;
+margin: 10px;
+justify-content: space-evenly;
+}
+.h{
+  border: 2px solid black;
+  background: #09a58b;  
+  
+  height: 400px;
+  width: 1500px;
+  margin: 10px;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
