@@ -1,3 +1,50 @@
 body {
   background: blanchedalmond;
+}                     
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+}        
+.a{
+  border: 2px solid black;
+  background: #0F2027;  
+  background: -webkit-linear-gradient(to right, #744d99, #26509e, #0000FF);  
+  background: linear-gradient(to right,#744d99, #26509e, #0000FF); 
+  min-height: 1vh;
+  flex-grow: 10;
+  margin: 15px;
+} 
+.b{
+  border: 2px solid black;
+  background: DarkBlue;  
+background: -webkit-linear-gradient(to right, #1565C0, #0000CD);  
+background: linear-gradient(to right, #1565C0, #0000CD); 
+flex-grow: 10;
+margin: 15px;
+}         
+.c{
+  border: 2px solid black;
+  background: rgb(1, 15, 9);  
+background: -webkit-linear-gradient(to right, #48D1CC, rgb(16, 82, 24)); 
+background: linear-gradient(to right,#48D1CC, rgb(16, 82, 24)); 
+flex-grow: 3;
+margin: 15px;
+}                  
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%;
+  
+  }
+  .b{
+    max-width: 80%
+    height: 80%;
+  }
 }
